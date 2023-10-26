@@ -1,0 +1,10 @@
+section#hero {
+  background-image: url("./images/hero.jpg");
+  background-position-y: 67%;
+  height: 870px;
+  text-shadow: 2px 2px white;
+}
+
+section#hero h1 span {
+  text-shadow: none;
+}

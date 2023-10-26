@@ -4,22 +4,96 @@
     <title>UTS Pemrograman Internet</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/0eeec5fb2f.js" crossorigin="anonymous"></script>
-    <link type="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: '#da373d',
-            }
+            },
+            fontFamily: {
+              'sans': ['Montserrat', 'Poppins', ...tailwind.defaultTheme.fontFamily.sans],
+            },
           }
         }
       }
     </script>
   </head>
-  <body>
+  <body class="font-sans">
+    <header>
+      <nav class="bg-white">
+        <div class="max-w-screen-xl flex items-center justify-between mx-auto p-8">
+          <a href="/" class="flex items-center">
+            <span class="self-center text-2xl font-bold whitespace-nowrap">Mohamad Fikri</span>
+          </a>
+          <div class="" id="navbar-menu">
+            <ul class="font-medium flex flex-row space-x-8 text-lg">
+              <li>
+                <a href="#hero" class="block text-slate-900 hover:text-red-500">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="block text-slate-500 hover:text-red-500">About</a>
+              </li>
+              <li>
+                <a href="#work" class="block text-slate-500 hover:text-red-500">Work</a>
+              </li>
+              <li>
+                <a href="#contact" class="block text-slate-500 hover:text-red-500">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="hero" class="mx-auto bg-cover flex items-end">
+      <div class="max-w-screen-xl  py-6 px-20">
+        <h1 class="text-4xl font-medium text-black">Hi! I am <br /><span class="font-bold text-white">Mohamad Fikri, SS</span></h1>
+        <p class="text-2xl mb-4">I'm a student from Indonesian Education University</p>
+        <button class="p-2 font-bold bg-white border border-2 border-black rounded rounded-full px-4">Resume</button>
+      </div>
+    </section>
+
+    <button class="w-full text-center my-20 text-2xl hover:text-blue-500"><a href="#about">More Info</a></button>
+
+    <section id="about" class="max-w-screen-xl p-8 mx-auto">
+      <h1 class="text-5xl font-bold text-slate-300">About</h1>
+      <p class="px-5 mt-5">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+    </section>
+
+    <section id="work" class="max-w-screen-xl p-8 mx-auto">
+      <h1 class="text-5xl font-bold text-slate-300">Work</h1>
+      <table>
+        <tr>
+          <td style="width: 50%; padding: 6px;"><p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p></td>
+          <td class="p-6"><img src="images/kura.jpg" alt="Kura-Kura" /></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contact" class="max-w-screen-xl p-8 mx-auto">
+      <h1 class="text-5xl font-bold text-slate-300">Contact</h1>
+      <table>
+        <tr>
+          <td style="width: 50%; padding: 6px;">
+            <div>
+              <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+              <div class="flex justify-around text-lg mt-5">
+                <a href="https://facebook.com/namaku101"><i class="fa-brands fa-facebook"></i>Namaku1801</a>
+                <a href="https://t.me/namaku1801"><i class="fa-brands fa-telegram"></i>Namaku1801</a>
+                <a href="https://wa.me/6288238238531"><i class="fa-brands fa-whatsapp"></i>+6288238238531</a>
+              </div>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
 
     <script src="script.js"></script>
   </body>
