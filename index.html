@@ -90,22 +90,22 @@
               </div>
             </div>
           </td>
-          <td>
-            <form class="border border-black p-8 text-xl">
-              <label for="email" class="font-bold">Email</label>
-              <br />
-              <input class="border w-full border-slate-400 rounded rounded-md" type="email" id="email" name="email" value="" />
-              <br />
-              <label for="subject" class="font-bold">Subject</label>
-              <br />
-              <input class="border w-full border-slate-400 rounded rounded-md" type="text" id="subject" name="subject" value="" />
-              <br />
-              <label for="message" class="font-bold">Message</label>
-              <br />
-              <input class="border w-full border-slate-400 rounded rounded-md" type="text" id="message" name="message" value="" />
-              <br />
-              <div class="text-center mt-8">
-                <button type="submit">Submit</button>
+          <td class="border border-black p-8 text-xl">
+            <form class="my-16">
+              <div class="mb-3">
+                <label for="email" class="font-bold">Email</label>
+              </div>
+              <input class="px-2 border w-full border-slate-400 rounded rounded-md" type="email" id="email" name="email" placeholder="example@example.com" value="" />
+              <div class="my-3">
+              <label for="subject" class="font-bold pb-3">Subject</label>
+              </div>
+              <input class="px-2 border w-full border-slate-400 rounded rounded-md" type="text" id="subject" name="subject" placeholder="Your Subject" value="" />
+              <div class="my-3">
+              <label for="message" class="font-bold pb-3">Message</label>
+              </div>
+              <input class="px-2 border w-full border-slate-400 rounded rounded-md" type="text" id="message" name="message" placeholder="Your Message" value="" />
+              <div class="text-center mt-12">
+                <button class="border border-4 rounded-full px-2 border-black" type="submit">Submit</button>
               </div>
             </form>
           </td>
